@@ -5,10 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-index
+<div th:fragment="link">
+    <a th:href="@{/}">go to home</a>
+</div>
 
-<br/>
-<div th:replace="pages/fragment::link"></div>
+<div id="footer">
+    <p>bla bla bla</p>
+    <a th:href="@{/logout}">logout</a>
+</div>
+
+
 
 </body>
 </html>
